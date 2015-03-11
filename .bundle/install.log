@@ -1,0 +1,52 @@
+# Logfile created on 2015-03-10 13:53:55 -0500 by logger.rb/44203
+I, [2015-03-10T13:53:55.124876 #7439]  INFO -- : 0:  json (1.8.2) from /Users/andy/.rvm/gems/ruby-2.1.0/specifications/json-1.8.2.gemspec
+E, [2015-03-10T13:54:01.877376 #7439] ERROR -- : Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+    /Users/andy/.rvm/rubies/ruby-2.1.0/bin/ruby extconf.rb 
+checking for pg_config... no
+No pg_config... trying anyway. If building fails, please try again with
+ --with-pg-config=/path/to/pg_config
+checking for libpq-fe.h... no
+Can't find the 'libpq-fe.h header
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/Users/andy/.rvm/rubies/ruby-2.1.0/bin/ruby
+	--with-pg
+	--without-pg
+	--enable-windows-cross
+	--disable-windows-cross
+	--with-pg-config
+	--without-pg-config
+	--with-pg_config
+	--without-pg_config
+	--with-pg-dir
+	--without-pg-dir
+	--with-pg-include
+	--without-pg-include=${pg-dir}/include
+	--with-pg-lib
+	--without-pg-lib=${pg-dir}/lib
+
+extconf failed, exit code 1
+
+Gem files will remain installed in /Users/andy/.rvm/gems/ruby-2.1.0/gems/pg-0.18.1 for inspection.
+Results logged to /Users/andy/.rvm/gems/ruby-2.1.0/extensions/x86_64-darwin-12/2.1.0-static/pg-0.18.1/gem_make.out
+
+/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:89:in `run'  \n/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/ext_conf_builder.rb:37:in `block in build'  \n/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/tempfile.rb:324:in `open'  \n/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/ext_conf_builder.rb:17:in `build'  \n/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:161:in `block (2 levels) in build_extension'  \n/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:160:in `chdir'  \n/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:160:in `block in build_extension'  \n/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:159:in `synchronize'  \n/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:159:in `build_extension'  \n/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:198:in `block in build_extensions'  \n/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:195:in `each'  \n/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:195:in `build_extensions'  \n/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/installer.rb:677:in `build_extensions'  \n/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/installer.rb:232:in `install'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:101:in `block in install'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:118:in `preserve_paths'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:94:in `install'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/installer.rb:111:in `block in install_gem_from_spec'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:150:in `with_build_args'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/installer.rb:110:in `install_gem_from_spec'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/installer.rb:295:in `block in install_sequentially'  \n/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/forwardable.rb:183:in `each'  \n/Users/andy/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/forwardable.rb:183:in `each'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/installer.rb:294:in `install_sequentially'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/installer.rb:97:in `run'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/installer.rb:15:in `install'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/cli.rb:257:in `install'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/command.rb:27:in `run'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/invocation.rb:120:in `invoke_command'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/vendor/thor.rb:363:in `dispatch'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/base.rb:438:in `start'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/cli.rb:10:in `start'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/bin/bundle:22:in `block in <top (required)>'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/lib/bundler/friendly_errors.rb:5:in `with_friendly_errors'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.1/bin/bundle:22:in `<top (required)>'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/bin/bundle:23:in `load'  \n/Users/andy/.rvm/gems/ruby-2.1.0@global/bin/bundle:23:in `<main>'  \n/Users/andy/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'  \n/Users/andy/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-03-10T13:58:14.089037 #7952]  INFO -- : 0:  json (1.8.2) from /Users/andy/.rvm/gems/ruby-2.1.0/specifications/json-1.8.2.gemspec
+I, [2015-03-10T13:58:14.089353 #7952]  INFO -- : 0:  pg (0.18.1) from /Users/andy/.rvm/gems/ruby-2.1.0/specifications/pg-0.18.1.gemspec
+I, [2015-03-10T13:58:14.089604 #7952]  INFO -- : 0:  rethinkdb (1.16.0.0) from /Users/andy/.rvm/gems/ruby-2.1.0/specifications/rethinkdb-1.16.0.0.gemspec
+I, [2015-03-10T13:58:14.089831 #7952]  INFO -- : 0:  bundler (1.5.1) from /Users/andy/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec
