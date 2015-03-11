@@ -12,7 +12,7 @@ task :run do
   puts '## RethinkDB Benchmark ##'
   rethink = Rethink.new settings
   rethink.run
-  
+
   puts ''
   puts '## PostgresQL Benchmark ##'
   postgres = Postgres.new settings
