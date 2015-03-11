@@ -17,19 +17,24 @@ For each database, the following operations are performed:
 
 ## Results
 
+These are the result from my machine (late 2013 MacBook Pro with 2.3 GHz Intel Core i7 and solid state drive).
+I'm using PostgresQL 9.4 and RethinkDB 1.15.
+
 ```
 ## RethinkDB Benchmark ##
                                      user     system      total        real
-Create table and index:          0.000000   0.010000   0.010000 (  2.617056)
-Populate 50000 initial pings:    4.940000   1.400000   6.340000 ( 15.957680)
-Insert single ping:              0.000000   0.000000   0.000000 (  0.425225)
-Get pings by key:                0.040000   0.010000   0.050000 (  0.114125)
+Create table and index:          0.000000   0.000000   0.000000 (  2.992940)
+Populate 500000 initial pings:  58.380000  18.680000  77.060000 (389.569893)
+Insert single ping:              0.000000   0.000000   0.000000 (  0.003109)
+Get pings by key:                0.630000   0.040000   0.670000 (  1.527739)
+Get pings by time range:         0.130000   0.010000   0.140000 (  0.356579)
 
 ## PostgresQL Benchmark ##
                                      user     system      total        real
-Create table and index:          0.000000   0.000000   0.000000 (  0.246849)
-Populate 50000 initial pings:    0.720000   0.400000   1.120000 (  8.627506)
-Insert single ping:              0.000000   0.000000   0.000000 (  0.000250)
-Get pings by key:                0.000000   0.000000   0.000000 (  0.014032)
+Create table and index:          0.000000   0.000000   0.000000 (  0.246710)
+Populate 500000 initial pings:   8.030000   4.300000  12.330000 ( 91.593710)
+Insert single ping:              0.000000   0.000000   0.000000 (  0.000258)
+Get pings by key:                0.040000   0.000000   0.040000 (  0.149622)
+Get pings by time range:         0.010000   0.000000   0.010000 (  0.029836)
 
 ```
