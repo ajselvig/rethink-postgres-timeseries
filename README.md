@@ -9,10 +9,12 @@ The data model used for testing is one table (pings) consisting of the following
 * value_field: a random double
 
 For each database, the following operations are performed:
+
 1. A database and single table are created, along with an index on key_field
 1. A large number of pings are populated in the table
 1. A single new ping is inserted
-1. All pings with one value of key_field are selected
+1. Select all pings with one value of key_field are selected
+1. Select all pings in a certain time range
 
 
 ## Results
